@@ -128,3 +128,9 @@ sabotageBtn.onclick=()=>{
   if(t<=0){clearInterval(i);location.reload();}
  },1000);
 };
+
+#repair {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
