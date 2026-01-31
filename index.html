@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dead by Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="menu">
+<h1>CHOIX DU GÉNÉRATEUR</h1>
+<div class="menu-buttons">
+<button onclick="selectGen('A')">GÉNÉRATEUR A</button>
+<button onclick="selectGen('B')">GÉNÉRATEUR B</button>
+<button onclick="selectGen('C')">GÉNÉRATEUR C</button>
+<button onclick="selectGen('D')">GÉNÉRATEUR D</button>
+<button onclick="selectGen('E')">GÉNÉRATEUR E</button>
+</div>
+
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+
+<script>
+function selectGen(letter){
+ document.getElementById("clickSound").play();
+ setTimeout(()=>{
+  window.location.href="generator.html?gen="+letter;
+ },300);
+}
+</script>
+</body>
+</html>
